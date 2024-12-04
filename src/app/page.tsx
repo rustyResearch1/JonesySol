@@ -2,7 +2,7 @@
 'use client';
 
 
-import React, { useState } from 'react';
+import React from 'react';
 
 // eslint-disable-next-line
 const JonesyWebsite = () => {
