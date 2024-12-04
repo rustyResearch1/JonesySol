@@ -6,7 +6,6 @@ import React, { useState } from 'react';
 
 // eslint-disable-next-line
 const JonesyWebsite = () => {
-  const [audioEnabled, setAudioEnabled] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#1E90FF] text-white relative">

@@ -8,12 +8,6 @@ import { motion } from 'framer-motion';
 
 // eslint-disable-next-line
 const JonesyWebsite = () => {
-  const [audioEnabled, setAudioEnabled] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   return (
     <div className="min-h-screen bg-[#87CEEB] text-white relative">
