@@ -116,8 +116,12 @@ const JonesyWebsite = () => {
         <div className="container mx-auto max-w-4xl">
           <Marquee />
           
+          <div className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <Marquee />
+          
           <div className="mt-12 space-y-8">
-            <Card className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform">
+            <div className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform rounded-xl">
               <h2 className="text-3xl font-bold mb-4 bg-purple-500 inline-block px-4 py-1 rounded-lg">
                 What is Fortnite?
               </h2>
@@ -131,10 +135,10 @@ const JonesyWebsite = () => {
                 frequent updates. Save the World is a cooperative survival mode, 
                 while Creative allows players to design their own worlds and game 
                 modes.
-              </p>
-            </Card>
+                </p>
+            </div>
 
-            <Card className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform">
+            <div className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform rounded-xl">
               <h2 className="text-3xl font-bold mb-4 bg-yellow-400 inline-block px-4 py-1 rounded-lg">
                 Who is Jonesy?
               </h2>
@@ -143,8 +147,8 @@ const JonesyWebsite = () => {
                 He is the central figure in fortology, came to the island to save players 
                 from one another and the storm. Jonesy preached for no builds, Team Rumble 
                 and OG Fortnite and was heavily against sweating.
-              </p>
-            </Card>
+                </p>
+            </div>
           </div>
         </div>
       </div>
