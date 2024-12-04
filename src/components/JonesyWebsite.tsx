@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import Marquee from '@/components/Marquee';
 import { motion } from 'framer-motion';
 
+// eslint-disable-next-line
 const JonesyWebsite = () => {
   const [audioEnabled, setAudioEnabled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);

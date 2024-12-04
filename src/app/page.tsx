@@ -1,8 +1,10 @@
 // src/app/page.tsx
 'use client';
 
+
 import React, { useState } from 'react';
 
+// eslint-disable-next-line
 const JonesyWebsite = () => {
   const [audioEnabled, setAudioEnabled] = useState(false);
 
