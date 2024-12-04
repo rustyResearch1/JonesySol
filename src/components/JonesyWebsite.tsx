@@ -3,35 +3,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-
 const Marquee = () => {
-    return (
-      <div className="relative flex overflow-hidden">
-        <div className="animate-marquee whitespace-nowrap py-4">
-          {[...Array(2)].map((_, i) => (
-            <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
-              <span className="text-yellow-400 mr-2">KNOW</span>
-              YOUR HERO
-              <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
-            </span>
-          ))}
-        </div>
-        <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
-          {[...Array(2)].map((_, i) => (
-            <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
-              <span className="text-yellow-400 mr-2">KNOW</span>
-              YOUR HERO
-              <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
-            </span>
-          ))}
-        </div>
+  return (
+    <div className="relative flex overflow-hidden">
+      <div className="animate-marquee whitespace-nowrap py-4">
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
+            <span className="text-yellow-400 mr-2">KNOW</span>
+            YOUR HERO
+            <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
+          </span>
+        ))}
       </div>
-    );
-  };
-  
-// eslint-disable-next-line
-const JonesyWebsite = () => {
+      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
+            <span className="text-yellow-400 mr-2">KNOW</span>
+            YOUR HERO
+            <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
 
+const JonesyWebsite = () => {
   return (
     <div className="min-h-screen bg-[#87CEEB] text-white relative">
       {/* Navbar */}
@@ -67,11 +64,9 @@ const JonesyWebsite = () => {
           </ul>
 
           <div className="flex items-center gap-4">
-          <button 
-          className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-white font-bold"
-        >
-          BUY NOW
-        </button>
+            <button className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-white font-bold">
+              BUY NOW
+            </button>
           </div>
         </div>
       </nav>
@@ -116,10 +111,6 @@ const JonesyWebsite = () => {
         <div className="container mx-auto max-w-4xl">
           <Marquee />
           
-          <div className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <Marquee />
-          
           <div className="mt-12 space-y-8">
             <div className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform rounded-xl">
               <h2 className="text-3xl font-bold mb-4 bg-purple-500 inline-block px-4 py-1 rounded-lg">
@@ -135,7 +126,7 @@ const JonesyWebsite = () => {
                 frequent updates. Save the World is a cooperative survival mode, 
                 while Creative allows players to design their own worlds and game 
                 modes.
-                </p>
+              </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-8 hover:scale-[1.02] transition-transform rounded-xl">
@@ -147,44 +138,13 @@ const JonesyWebsite = () => {
                 He is the central figure in fortology, came to the island to save players 
                 from one another and the storm. Jonesy preached for no builds, Team Rumble 
                 and OG Fortnite and was heavily against sweating.
-                </p>
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Audio Element */}
-      <audio loop>
-        <source src="/background-music.mp3" type="audio/mpeg" />
-      </audio>
     </div>
   );
 };
 
 export default JonesyWebsite;
-
-// src/components/Marquee.tsx
-const Marquee = () => {
-  return (
-    <div className="relative flex overflow-hidden">
-      <div className="animate-marquee whitespace-nowrap py-4">
-        {[...Array(2)].map((_, i) => (
-          <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
-            <span className="text-yellow-400 mr-2">KNOW</span>
-            YOUR HERO
-            <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
-          </span>
-        ))}
-      </div>
-      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
-        {[...Array(2)].map((_, i) => (
-          <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
-            <span className="text-yellow-400 mr-2">KNOW</span>
-            YOUR HERO
-            <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-};
