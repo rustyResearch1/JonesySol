@@ -1,11 +1,34 @@
 'use client';
 
 import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import Marquee from '@/components/Marquee';
 import { motion } from 'framer-motion';
 
+
+const Marquee = () => {
+    return (
+      <div className="relative flex overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap py-4">
+          {[...Array(2)].map((_, i) => (
+            <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
+              <span className="text-yellow-400 mr-2">KNOW</span>
+              YOUR HERO
+              <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
+            </span>
+          ))}
+        </div>
+        <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
+          {[...Array(2)].map((_, i) => (
+            <span key={i} className="inline-flex items-center mx-4 text-2xl font-bold">
+              <span className="text-yellow-400 mr-2">KNOW</span>
+              YOUR HERO
+              <img src="/hero-icon.png" alt="hero" className="ml-2 w-6 h-6 rounded-full" />
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  };
+  
 // eslint-disable-next-line
 const JonesyWebsite = () => {
 
@@ -44,27 +67,11 @@ const JonesyWebsite = () => {
           </ul>
 
           <div className="flex items-center gap-4">
-            <Button 
-              variant="default"
-              className="bg-blue-500 hover:bg-blue-600 text-white"
-            >
-              BUY NOW
-            </Button>
-            <button 
-              onClick={() => setAudioEnabled(!audioEnabled)}
-              className="text-[#0288d1] hover:text-blue-400"
-            >
-              {audioEnabled ? (
-                <svg width="30" height="30" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M14 9.61V7h2c1.1 0 2-.9 2-2s-.9-2-2-2h-3c-.55 0-1 .45-1 1v3.61l2 2z" />
-                  <path fill="currentColor" d="M5.12 3.56c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l8.29 8.3v.28c-.94-.54-2.1-.75-3.33-.32-1.34.48-2.37 1.67-2.61 3.07-.46 2.74 1.86 5.08 4.59 4.65 1.96-.31 3.35-2.11 3.35-4.1v-1.58l5.02 5.02c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L5.12 3.56z" />
-                </svg>
-              ) : (
-                <svg width="30" height="30" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
-                </svg>
-              )}
-            </button>
+          <button 
+          className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full text-white font-bold"
+        >
+          BUY NOW
+        </button>
           </div>
         </div>
       </nav>
